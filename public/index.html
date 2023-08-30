@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/video-react.css" />
+
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -15,6 +17,20 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tran Ngoc Phu</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,19 +41,104 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <!--<style>
+       .present{
+         position: relative;
+         display: flex;
+         height: 700px;
+         margin-top: 50px;
+       }
+       .detail{
+         position: relative;
+         top: 55%;
+         transform: translateY(-50%);
+         height: 50%;
+         margin-right: 100px;
+         color: white;
+       }    
+       model-viewer{
+            display: block;
+            height: 100%;
+            width: 800px;
+            margin: 0 auto;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+          background: unset;
+          background: linear-gradient(black,blue);
+        }
+        .inter{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 250px;
+        }
+        h2{
+            padding-top: 30px;
+            color: white;
+        }
+        hr{
+            margin: 0 auto;
+        }
+        .text{
+          position: relative;
+          text-align: center;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          margin-top: 50px;
+        }
+    </style>-->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- <div class="inter">
+      <h2>Welcome to CanTho University</h2>
+      <h2>COLLEGE OF INFORMATION & COMMUNICATION TECHNOLOGY</h2>
+      <hr size="1px" width="50%">
+      <h3 style="margin-top: 10px; text-transform: uppercase; font-weight: bold;">3d model</h3>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <h2 class="text">Mô hình trước khi tối ưu</h2>
+  <hr size="1px" width="5%">
+  <div class="present">
+    <model-viewer src="version_old.glb" alt="VR Headset" auto-rotate camera-controls ar ios-src="../src/assets/scene2.glb"></model-viewer>
+    <div class="detail">
+      <h2>Thống kê chi tiết mô hình</h2>
+      <br>
+      <h3>Số lượng mặt phẳng: 795.341</h3>
+      <h3>Số lượng đỉnh: 453.911</h3>
+      <h3>Số lượng đường thẳng: 1.257.851</h3>
+      <h3>Số lượng tam giác: 902.401</h3>
+      <br>
+      <h2>Kích cỡ tệp GLB: 70Mb</h2>
+    </div>
+  </div>
+  <h2 class="text">Mô hình sau khi tối ưu</h2>
+  <hr size="1px" width="5%">
+  <div class="present">
+    <model-viewer src="scenetest1.glb" alt="VR Headset" auto-rotate camera-controls ar ios-src="scene2.glb"></model-viewer>
+    <div class="detail">
+      <h2>Thống kê chi tiết mô hình</h2>
+      <br>
+      <h3>Số lượng mặt phẳng: 110.192</h3>
+      <h3>Số lượng đỉnh: 69.338</h3>
+      <h3>Số lượng đường thẳng: 187.515</h3>
+      <h3>Số lượng tam giác: 150.027</h3>
+      <br>
+      <h2>Kích cỡ tệp GLB: 11.1Mb</h2>
+    </div> -->
+  </div>
   </body>
 </html>

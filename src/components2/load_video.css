@@ -1,0 +1,23 @@
+.load_video{
+    display: block;
+}
+.opti{
+    text-align: center;
+    display: block;
+    position: relative;
+}
+@media screen and (max-width: 1050px){
+    .opti{
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .opti{
+        display: none;
+    }
+}
+@media screen and (max-width: 550px){
+    .opti{
+        display: none;
+    }
+}
